@@ -2,4 +2,4 @@
 Project for DHN
 http://deadheadnod.com
 
-This was made in Unity 
+This was made in Unity in C#
