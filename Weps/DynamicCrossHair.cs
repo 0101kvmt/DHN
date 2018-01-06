@@ -5,9 +5,10 @@ using UnityEngine;
 public class DynamicCrossHair : MonoBehaviour {
 
     static public float spread = -30;
-
+        
     public const int PISTOL_SHOOTING_SPREAD = 15;
     public const int UZI_SHOOTING_SPREAD = 10;
+    public const int SHOTGUN_SHOOTING_SPREAD = 18;
     public const int JUMP_SPREAD = 20;
     public const int WALK_SPREAD = 10;
     public const int RUN_SPREAD = 15;
