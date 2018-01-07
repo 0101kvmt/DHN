@@ -16,6 +16,7 @@ public class EnemyStates : MonoBehaviour {
     public float missleSpeed;
 
     public bool onlyMelee = false;
+    public bool canJump = false;
 
     public float meleeDamage;
     public float attackDelay;

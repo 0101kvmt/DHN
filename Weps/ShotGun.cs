@@ -82,7 +82,7 @@ public class ShotGun : MonoBehaviour
 
 
                     Ray ray = Camera.main.ScreenPointToRay(randomTarget);
-
+                    
                     DynamicCrossHair.spread += DynamicCrossHair.SHOTGUN_SHOOTING_SPREAD;
                     ammoClipLeft--;
                     source.PlayOneShot(shotSound);
@@ -94,7 +94,7 @@ public class ShotGun : MonoBehaviour
                     {
 
                         Instantiate(bulletHole, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal)).transform.parent = hit.collider.gameObject.transform;
-
+                        hit.rigidbody.AddForce(hit.transform.forward * 100);
                         Instantiate(BloodSplat, hit.point, Quaternion.identity);
                         if (hit.collider.gameObject.GetComponent<EnemyStates>().currentState == hit.collider.gameObject.GetComponent<EnemyStates>().patrolState || hit.collider.gameObject.GetComponent<EnemyStates>().currentState == hit.collider.gameObject.GetComponent<EnemyStates>().alertState)
                         {

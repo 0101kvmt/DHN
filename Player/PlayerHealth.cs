@@ -38,5 +38,9 @@ public class PlayerHealth : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         Health.text = health + "GR";
+        if(health == 0)
+        {
+            Debug.Log("dead");
+        }
     }
 }
